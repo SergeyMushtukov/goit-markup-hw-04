@@ -59,7 +59,7 @@ img {
   border-bottom: 1px solid #e7e9fc;
   padding-top: 24px;
   padding-bottom: 24px;
-  
+
   background-color: #ffffff;
 }
 
@@ -146,18 +146,35 @@ img {
 
 /* --------HERO-------- */
 
+.overlay {
+  max-width: 1440px;
+  /* height: 600px; */
+  margin-left: auto;
+  margin-right: auto;
+
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url('../images/people-office.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #2e2f42;
+}
+
 .hero {
   padding-top: 188px;
   padding-bottom: 188px;
 
   text-align: center;
-  background: #2e2f42;
 }
+
 .hero-title {
   margin-bottom: 48px;
 
   font-size: 56px;
-  line-height: 1.07;
+  line-height: calc(60 / 56);
 
   color: #ffffff;
 }
@@ -196,6 +213,23 @@ img {
 
 .benefits-item {
   flex-basis: calc((100% - 72px) / 4);
+}
+
+.benefits-thumb {
+  height: 112px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin-bottom: 8px;
+  background: #f4f4fd;
+  border-radius: 4px;
+}
+
+.benefits-icon {
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .benefits-title {
@@ -237,6 +271,7 @@ img {
 .team {
   background-color: #f4f4fd;
 }
+
 .team-title {
   margin-bottom: 72px;
 
@@ -277,12 +312,79 @@ img {
   line-height: 1.5;
 }
 
+.team-soc-list {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.team-soc-link {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+
+  background: var(--accent-color);
+  border-radius: 50%;
+}
+
+.team-soc-link:hover,
+.team-soc-link:focus {
+  background: var(--hover-bg-color);
+}
+
+/* --------Customers-------- */
+
+.customer-title {
+  margin-bottom: 72px;
+
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--title-text-color);
+}
+
+.customer-list {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+
+.customer-link {
+  display: flex;
+  width: 168px;
+  height: 88px;
+  justify-content: center;
+  align-items: center;
+  color: #8e8f99;
+
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+}
+
+.customer-link:hover,
+.customer-link:focus {
+  color: var(--hover-bg-color);
+  border-color: var(--hover-bg-color);
+}
+
+.customer-icon {
+  fill: currentColor;
+}
+
 /* --------FOOTER-------- */
 
 .footer {
   padding: 100px 0;
 
   background-color: var(--title-text-color);
+}
+
+.footer-container {
+  display: flex;
 }
 
 .footer-logo {
@@ -300,6 +402,40 @@ img {
   font-size: 16px;
   line-height: 1.5;
   color: #e7e9fc;
+}
+
+.footer-soc {
+  margin-left: 120px;
+}
+
+.footer-soc-title {
+  margin-bottom: 16px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #ffffff;
+}
+
+.footer-soc-list {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-soc-link {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+  background: #31d0aa;
 }
 
 /* -------------PORTFOLIO PAGE------------- */
@@ -343,6 +479,9 @@ img {
   color: #ffffff;
   background-color: var(--hover-bg-color);
   border-color: transparent;
+
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .examples-list {
@@ -358,9 +497,11 @@ img {
   background-color: #ffffff;
 }
 
-/* .examples-item > .link {
-  display: inline-block ;
-} */
+.examples-item:hover,
+.examples-item:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 
 .examples-item-title {
   margin-bottom: 8px;
