@@ -41,7 +41,7 @@ ul {
   width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
-  /* outline: 2px solid tomato; */
+  outline: 2px solid tomato;
 }
 
 .section {
@@ -180,7 +180,7 @@ img {
 }
 .hero-btn {
   border-radius: 4px;
-  border-color: transparent;
+  border: none;
   padding: 16px 32px;
 
   font-family: inherit;
